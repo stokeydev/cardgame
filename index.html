@@ -1,21 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
     <title>Top Trumps Game</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Top Trumps Game</h1>
-    <div id="game-board">
-      <div id="player-hand">
-        <h2>Your Hand</h2>
+    <div class="container">
+      <h1>Top Trumps Game</h1>
+      <div class="player-card">
+        <h2>Player Card</h2>
+        <img src="" alt="" class="card-image">
+        <div class="card-stats">
+          <div class="stat">
+            <div class="stat-name">Electability</div>
+            <div class="stat-value"></div>
+          </div>
+          <div class="stat">
+            <div class="stat-name">Economics</div>
+            <div class="stat-value"></div>
+          </div>
+          <div class="stat">
+            <div class="stat-name">Principles</div>
+            <div class="stat-value"></div>
+          </div>
+          <div class="stat">
+            <div class="stat-name">Foreign-policy</div>
+            <div class="stat-value"></div>
+          </div>
+        </div>
       </div>
-      <div id="computer-hand">
-        <h2>Computer's Hand</h2>
+      <div class="computer-card">
+        <h2>Computer Card</h2>
+        <img src="" alt="" class="card-image">
+        <div class="card-stats">
+          <div class="stat">
+            <div class="stat-name">Electability</div>
+            <div class="stat-value"></div>
+          </div>
+          <div class="stat">
+            <div class="stat-name">Economics</div>
+            <div class="stat-value"></div>
+          </div>
+          <div class="stat">
+            <div class="stat-name">Principles</div>
+            <div class="stat-value"></div>
+          </div>
+          <div class="stat">
+            <div class="stat-name">Foreign-policy</div>
+            <div class="stat-value"></div>
+          </div>
+        </div>
+      </div>
+      <div class="result"></div>
+      <button id="start-button">Start Game</button>
+      <div class="category-buttons">
+        <button id="electability-button">Electability</button>
+        <button id="economics-button">Economics</button>
+        <button id="principles-button">Principles</button>
+        <button id="foreign-policy-button">Foreign-policy</button>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

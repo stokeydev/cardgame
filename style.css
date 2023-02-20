@@ -1,36 +1,61 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
   }
   
   h1 {
     text-align: center;
   }
   
-  #game-board {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
+  .player-card, .computer-card {
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 2%;
   }
   
-  #player-hand,
-  #computer-hand {
-    width: 50%;
-    border: 1px solid #333;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  .card-image {
+    width: 100%;
+  }
+  
+  .card-stats {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .stat {
+    width: 25%;
     text-align: center;
   }
   
-  #player-hand {
-    margin-right: 20px;
+  .stat-name {
+    font-weight: bold;
   }
   
-  #computer-hand {
-    margin-left: 20px;
+  .stat-value {
+    font-size: 2em;
+  }
+  
+  .result {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2em;
+  }
+  
+  .category-buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  button {
+    font-size: 1.5em;
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    background-color: #ddd;
   }
   
