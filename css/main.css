@@ -1,0 +1,28 @@
+html, body { 
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(34,34,34);
+    font-family: arial;
+    color: white;
+   }
+   
+   #siteContent {
+    padding: 0px;
+    border: 0px;
+   }
+   
+   #container { 
+    border: 0px;
+    border-top: none;
+    margin: 0 50px;
+    background: rgb(34,34,34);
+   }
+   
+   .hide {display: none }
+   .centered { text-align: center; margin: 0 auto;}
+   #counter { border: 0px; };
+   
+   img {
+    height: 50px;
+    width: 100%;
+   }

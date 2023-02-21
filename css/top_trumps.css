@@ -1,0 +1,122 @@
+.cards {
+    font: normal normal 500 small arial, sans-serif;
+    text-align: center;
+    width: 46em;
+    margin: 0 auto;
+   }
+   .cards .left p, .cards .right p {
+    clear: both;
+    height:1.5em;
+   }
+   
+   #P1Flag, #P2Flag {
+    float:right;
+   }
+   
+   .cards img {
+    border: 1px solid #000;
+   }
+   
+   #oppCard {
+    padding:5px;
+    border: 1px solid #000;
+    width:47%;
+    background-color: rgb(255,255,255);
+    color:black;
+    float:right;
+   }
+   
+   #yourCard {
+    padding:5px;
+    border: 1px solid #000;
+    width:47%;
+    float:left;
+    background-color: rgb(255,255,255);
+    color:black;
+   }
+   
+   #yourCards, #oppCards, #mainCards {
+    padding-top: 15px;
+    font-weight: bold;
+    
+   }
+   
+   #matchResult {
+    clear: both;
+    height:1.5em;
+    font-weight: bold;
+   }
+   
+   .cards table {
+    margin: 0;
+    padding: 0;
+    width: 22em;
+    }
+   
+   .cards table td, .cards table th {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 2.5em;
+   }
+   
+   #compareButton {
+   background-clip:padding-box;
+   background-color: rgb(57, 107, 158);
+   background-image: linear-gradient(rgb(95, 156, 197), rgb(57, 107, 158));
+   background-origin: padding-box;
+   background-position: 0% 0%;
+   background-repeat: repeat;
+   background-size: auto auto;
+   border-bottom-color: rgb(4, 64, 98);
+   border-bottom-left-radius: 15px;
+   border-bottom-right-radius: 15px;
+   border-bottom-style: solid;
+   border-bottom-width: 1px;
+   border-image-outset: 0 0 0 0;
+   border-image-repeat: stretch stretch;
+   border-image-slice: 100% 100% 100% 100%;
+   border-image-source: none;
+   border-image-width: 1 1 1 1;
+   border-left-color: rgb(4, 64, 98);
+   border-left-style: solid;
+   border-left-width: 1px;
+   border-right-color: rgb(4, 64, 98);
+   border-right-style: solid;
+   border-right-width: 1px;
+   border-top-color: rgb(4, 64, 98);
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
+   border-top-style: solid;
+   border-top-width: 1px;
+   box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 0px 0px;
+   color: rgb(255, 255, 255);
+   cursor: pointer;
+   display: block;
+   font-family: Helvetica,Arial,sans-serif;
+   font-weight: 700;
+   left: 5px;
+   margin-bottom: 0px;
+   margin-left: 40%;
+   margin-right: 0px;
+   margin-top: 0px;
+   padding-bottom: 6px;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 6px;
+   text-align: center;
+   text-decoration: none;
+   text-shadow: rgb(25, 75, 126) 0px 1px 1px;
+   top: 3px;
+   vertical-align: middle;
+   z-index: 10;
+   -moz-border-bottom-colors: none;
+   -moz-border-left-colors: none;
+   -moz-border-right-colors: none;
+   -moz-border-top-colors: none;
+   -moz-text-blink: none;
+   -moz-text-decoration-color: rgb(255, 255, 255);
+   -moz-text-decoration-line: none;
+   -moz-text-decoration-style: solid;
+   } 
