@@ -3,7 +3,7 @@
 var cars = [
     new TopTrumpCard("Rishi Sunak", "Conservative", 42, 0.4, 0, 35, 65, 3, 75, 60, "images\/car_thumbs\/rish.jpeg"),
     new TopTrumpCard("Liz Truss", "Conservative", 47, 0.1, 0, 30, 20, 0, 80, 50, "images\/car_thumbs\/liz_truss.jpg"),
-    new TopTrumpCard("Boris Johnson", "Conservative", 58, 3, 1, 0, 95, 10, 78, 88, "images\/car_thumbs\/boris.jpeg"),
+    new TopTrumpCard("Boris Johnson", "Conservative", 58, 3, 1, 0, 25, 10, 78, 88, "images\/car_thumbs\/boris.jpeg"),
     new TopTrumpCard("David Cameron", "Conservative", 56, 6, 2, 50, 70, 60, 70, 80, "images\/car_thumbs\/dcam.jpeg"),
     new TopTrumpCard("Gordon Brown", "Labour", 72, 3, 0, 86, 90, 90, 90, 70, "images\/car_thumbs\/brown.jpeg"),
     new TopTrumpCard("Tony Blair", "Labour", 69, 10, 3, 50, 90, 100, 30, 85, "images\/car_thumbs\/blair.jpeg"),
@@ -16,7 +16,7 @@ var cars = [
     new TopTrumpCard("Alec Douglas-Home", "Conservative", 92, 1, 0, 73, 30, 50, 60, 20, "images\/car_thumbs\/adg.jpeg"),
     new TopTrumpCard("Anthony Eden", "Conservative", 79, 2, 1, 80, 65, 90, 15, 91, "images\/car_thumbs\/eden.jpeg"),
     new TopTrumpCard("Winston Churchill", "Conservative", 90, 9, 1, 80, 90, 60, 89, 99, "images\/car_thumbs\/churchill.jpeg"),
-    new TopTrumpCard("Clement Attlee", "Labour", 84, 6, 2, 99, 85, 99, 95, 75, "images\/car_thumbs\/anne.jpeg"),
+    new TopTrumpCard("Clement Attlee", "Labour", 84, 6, 2, 99, 85, 99, 95, 75, "images\/car_thumbs\/attlee.webp"),
     new TopTrumpCard("George VI", "Monarch", 56, 16, 0, 86, 95, 70, 60, 90, "images\/car_thumbs\/georgevi.jpeg"),
     new TopTrumpCard("Elizabeth II", "Monarch", 96, 70, 0, 65, 80, 80, 95, 100, "images\/car_thumbs\/qlizii.jpeg"),
     new TopTrumpCard("Charles III", "Monarch", 74, 0.5, 0, 88, 70, 70, 90, 65, "images\/car_thumbs\/charlesiii.jpeg"),
