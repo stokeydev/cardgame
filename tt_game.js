@@ -1,6 +1,21 @@
-// (name, party, age(at death if deceased), in offce, election victories, principles, leadership, Economics, Foreign Policy, , charisma)
+class TopTrumpCard {
+    constructor(name, party, age, inOffce, electionVictories, principles, leadership, Economics, ForeignPolicy, charisma, image) {
+        this.name = name;
+        this.party = party;
+        this.age = age;
+        this.inOffce = inOffce;
+        this.electionVictories = electionVictories;
+        this.principles = principles;
+        this.leadership = leadership;
+        this.Economics = Economics;
+        this.ForeignPolicy = ForeignPolicy;
+        this.charisma = charisma;
+        this.image = image;
+    }
+}
 
-var cars = [
+// (name, party, age(at death if deceased), in offce, election victories, principles, leadership, Economics, Foreign Policy, , charisma)
+var politicians = [
     new TopTrumpCard("Rishi Sunak", "Conservative", 42, 0.4, 0, 35, 65, 30, 75, 60, "images\/car_thumbs\/rish.jpeg"),
     new TopTrumpCard("Liz Truss", "Conservative", 47, 0.1, 0, 30, 20, 0, 80, 50, "images\/car_thumbs\/liz_truss.jpg"),
     new TopTrumpCard("Boris Johnson", "Conservative", 58, 3, 1, 0, 25, 10, 78, 88, "images\/car_thumbs\/boris.jpeg"),
@@ -68,39 +83,35 @@ var cars = [
     }
     
     function drawP1Card() {
-        document.getElementById("P1Flag").src = "images\/"+ player1Card.nation +".gif";
-        document.getElementById("P1Flag").alt = player1Card.nation;
-        
+        document.getElementById("P1Flag").src = "images\/"+ player1Card.party +".gif";
+        document.getElementById("P1Flag").alt = player1Card.party;
         document.getElementById("P1Car").src = player1Card.image;
         document.getElementById("P1Car").alt = player1Card.name;
         document.getElementById("P1Name").firstChild.nodeValue = player1Card.name;
-        
-        document.getElementById("P1Engine").lastChild.nodeValue = player1Card.engine;
-        document.getElementById("P1BHP").lastChild.nodeValue = player1Card.bhp;
-        document.getElementById("P1RPM").lastChild.nodeValue = player1Card.rpm;
-        document.getElementById("P1Accel").lastChild.nodeValue = player1Card.accel;
-        document.getElementById("P1Speed").lastChild.nodeValue = player1Card.topSpeed;
-        document.getElementById("P1Len").lastChild.nodeValue = player1Card.length;
-        document.getElementById("P1Width").lastChild.nodeValue = player1Card.carWidth;
-        document.getElementById("P1Price").lastChild.nodeValue = player1Card.price;
+        document.getElementById("P1Engine").lastChild.nodeValue = player1Card.inOffce;
+        document.getElementById("P1BHP").lastChild.nodeValue = player1Card.electionVictories;
+        document.getElementById("P1RPM").lastChild.nodeValue = player1Card.principles;
+        document.getElementById("P1Accel").lastChild.nodeValue = player1Card.leadership;
+        document.getElementById("P1Speed").lastChild.nodeValue = player1Card.Economics;
+        document.getElementById("P1Len").lastChild.nodeValue = player1Card.ForeignPolicy;
+        document.getElementById("P1Width").lastChild.nodeValue = player1Card.charisma;
+        document.getElementById("P1Price").lastChild.nodeValue = player1Card.age;
     }
     
     function drawP2Card() {
-        document.getElementById("P2Flag").src = "images\/"+ player2Card.nation +".gif";
-        document.getElementById("P2Flag").alt = player2Card.nation;
-        
+        document.getElementById("P2Flag").src = "images\/"+ player2Card.party +".gif";
+        document.getElementById("P2Flag").alt = player2Card.party;
         document.getElementById("P2Car").src = player2Card.image;
         document.getElementById("P2Car").alt = player2Card.name;
         document.getElementById("P2Name").firstChild.nodeValue = player2Card.name;
-        
-        document.getElementById("P2Engine").firstChild.nodeValue = player2Card.engine;
-        document.getElementById("P2BHP").firstChild.nodeValue = player2Card.bhp;
-        document.getElementById("P2RPM").firstChild.nodeValue = player2Card.rpm;
-        document.getElementById("P2Accel").firstChild.nodeValue = player2Card.accel;
-        document.getElementById("P2Speed").firstChild.nodeValue = player2Card.topSpeed;
-        document.getElementById("P2Len").firstChild.nodeValue = player2Card.length;
-        document.getElementById("P2Width").firstChild.nodeValue = player2Card.carWidth;
-        document.getElementById("P2Price").firstChild.nodeValue = player2Card.price;
+        document.getElementById("P2Engine").firstChild.nodeValue = player2Card.inOffce;
+        document.getElementById("P2BHP").firstChild.nodeValue = player2Card.electionVictories;
+        document.getElementById("P2RPM").firstChild.nodeValue = player2Card.principles;
+        document.getElementById("P2Accel").firstChild.nodeValue = player2Card.leadership;
+        document.getElementById("P2Speed").firstChild.nodeValue = player2Card.Economics;
+        document.getElementById("P2Len").firstChild.nodeValue = player2Card.ForeignPolicy;
+        document.getElementById("P2Width").firstChild.nodeValue = player2Card.charisma;
+        document.getElementById("P2Price").firstChild.nodeValue = player2Card.age;
     }
     
     function clearP2Card() {
@@ -161,14 +172,14 @@ var cars = [
         player2 = new TopTrumpQueue();
         
         for(i=0; i<30; i++) {
-            theDeck.enqueue(cars[i]);
+            theDeck.enqueue(politicians[i]);
         }
         
         var d=document;
         d.carImages = [];
         for(i=0; i<30; i++) {
             d.carImages[i]=new Image();
-            d.carImages[i].src=cars[i].image;
+            d.carImages[i].src=politicians[i].image;
         }
         
         d.carImages[31] = new Image();
