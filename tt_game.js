@@ -1,12 +1,12 @@
 // (name, party, age(at death if deceased), in offce, election victories, principles, leadership, Economics, Foreign Policy, , charisma)
 
 var cars = [
-    new TopTrumpCard("Rishi Sunak", "Conservative", 42, 0.4, 0, 35, 65, 3, 75, 60, "images\/car_thumbs\/rish.jpeg"),
+    new TopTrumpCard("Rishi Sunak", "Conservative", 42, 0.4, 0, 35, 65, 30, 75, 60, "images\/car_thumbs\/rish.jpeg"),
     new TopTrumpCard("Liz Truss", "Conservative", 47, 0.1, 0, 30, 20, 0, 80, 50, "images\/car_thumbs\/liz_truss.jpg"),
     new TopTrumpCard("Boris Johnson", "Conservative", 58, 3, 1, 0, 25, 10, 78, 88, "images\/car_thumbs\/boris.jpeg"),
     new TopTrumpCard("David Cameron", "Conservative", 56, 6, 2, 50, 70, 60, 70, 80, "images\/car_thumbs\/dcam.jpeg"),
-    new TopTrumpCard("Gordon Brown", "Labour", 72, 3, 0, 86, 90, 90, 90, 70, "images\/car_thumbs\/brown.jpeg"),
-    new TopTrumpCard("Tony Blair", "Labour", 69, 10, 3, 50, 90, 100, 30, 85, "images\/car_thumbs\/blair.jpeg"),
+    new TopTrumpCard("Gordon Brown", "Labour", 72, 3, 0, 86, 90, 90, 80, 70, "images\/car_thumbs\/brown.jpeg"),
+    new TopTrumpCard("Tony Blair", "Labour", 69, 10, 3, 50, 90, 95, 30, 85, "images\/car_thumbs\/blair.jpeg"),
     new TopTrumpCard("John Major", "Conservative", 79, 7, 1, 80, 88, 80, 80, 30, "images\/car_thumbs\/major.jpeg"),
     new TopTrumpCard("Margaret Thatcher", "Conservative", 87, 11, 3, 60, 79, 70, 60, 89, "images\/car_thumbs\/maggie.jpeg"),
     new TopTrumpCard("James Callaghan", "Labour", 92, 3, 0, 68, 65, 65, 90, 65, "images\/car_thumbs\/jamesc.jpeg"),
@@ -18,14 +18,14 @@ var cars = [
     new TopTrumpCard("Winston Churchill", "Conservative", 90, 9, 1, 80, 90, 60, 89, 99, "images\/car_thumbs\/churchill.jpeg"),
     new TopTrumpCard("Clement Attlee", "Labour", 84, 6, 2, 99, 85, 99, 95, 75, "images\/car_thumbs\/attlee.webp"),
     new TopTrumpCard("George VI", "Monarch", 56, 16, 0, 86, 95, 70, 60, 90, "images\/car_thumbs\/georgevi.jpeg"),
-    new TopTrumpCard("Elizabeth II", "Monarch", 96, 70, 0, 65, 80, 80, 95, 100, "images\/car_thumbs\/qlizii.jpeg"),
+    new TopTrumpCard("Elizabeth II", "Monarch", 96, 70, 0, 65, 80, 80, 95, 95, "images\/car_thumbs\/qlizii.jpeg"),
     new TopTrumpCard("Charles III", "Monarch", 74, 0.5, 0, 88, 70, 70, 90, 65, "images\/car_thumbs\/charlesiii.jpeg"),
-    new TopTrumpCard("Ed Miliband", "Labour", 26, 0, 0, 85, 30, 80, 80, 40, "images\/car_thumbs\/miliband.jpeg"),
+    new TopTrumpCard("Ed Miliband", "Labour", 53, 0, 0, 85, 30, 80, 80, 40, "images\/car_thumbs\/miliband.jpeg"),
     new TopTrumpCard("John Smith", "Labour", 63, 0, 0, 70, 70, 80, 80, 60, "images\/car_thumbs\/jsmith.jpeg"),
     new TopTrumpCard("Neil Kinnock", "Labour", 80, 0, 0, 65, 70, 70, 70, 65, "images\/car_thumbs\/kinnock.webp"),
     new TopTrumpCard("Michael Foot", "Labour", 90, 0, 0, 80, 40, 70, 70, 50, "images\/car_thumbs\/foot.jpeg"),
     new TopTrumpCard("Keir Starmer", "Labour", 60, 0, 0, 50, 80, 80, 80, 70, "images\/car_thumbs\/starmer.jpeg"),
-    new TopTrumpCard("Jeremy Corbyn", "Labour", 73, 0, 0, 100, 20, 90, 70, 65, "images\/car_thumbs\/corbyn.jpeg"),
+    new TopTrumpCard("Jeremy Corbyn", "Labour", 73, 0, 0, 95, 20, 90, 70, 65, "images\/car_thumbs\/corbyn.jpeg"),
     new TopTrumpCard("Hugh Gaitskell", "Labour", 62, 0, 0, 60, 85, 80, 80, 70, "images\/car_thumbs\/gaitskell.jpeg"),
     new TopTrumpCard("Theresa May", "Conservative", 66, 3, 1, 65, 60, 60, 65, 50, "images\/car_thumbs\/tmay.jpeg"),
     new TopTrumpCard("Ian Duncan Smith", "Conservative", 68, 0, 0, 40, 20, 50, 50, 10, "images\/car_thumbs\/ids.jpeg"),
@@ -75,14 +75,14 @@ var cars = [
         document.getElementById("P1Car").alt = player1Card.name;
         document.getElementById("P1Name").firstChild.nodeValue = player1Card.name;
         
-        document.getElementById("P1Engine").lastChild.nodeValue = player1Card.engine + " yrs";
+        document.getElementById("P1Engine").lastChild.nodeValue = player1Card.engine;
         document.getElementById("P1BHP").lastChild.nodeValue = player1Card.bhp;
         document.getElementById("P1RPM").lastChild.nodeValue = player1Card.rpm;
         document.getElementById("P1Accel").lastChild.nodeValue = player1Card.accel;
         document.getElementById("P1Speed").lastChild.nodeValue = player1Card.topSpeed;
         document.getElementById("P1Len").lastChild.nodeValue = player1Card.length;
         document.getElementById("P1Width").lastChild.nodeValue = player1Card.carWidth;
-        document.getElementById("P1Price").lastChild.nodeValue = player1Card.price +" yrs";
+        document.getElementById("P1Price").lastChild.nodeValue = player1Card.price;
     }
     
     function drawP2Card() {
@@ -93,14 +93,14 @@ var cars = [
         document.getElementById("P2Car").alt = player2Card.name;
         document.getElementById("P2Name").firstChild.nodeValue = player2Card.name;
         
-        document.getElementById("P2Engine").firstChild.nodeValue = player2Card.engine+" yrs";
+        document.getElementById("P2Engine").firstChild.nodeValue = player2Card.engine;
         document.getElementById("P2BHP").firstChild.nodeValue = player2Card.bhp;
         document.getElementById("P2RPM").firstChild.nodeValue = player2Card.rpm;
         document.getElementById("P2Accel").firstChild.nodeValue = player2Card.accel;
         document.getElementById("P2Speed").firstChild.nodeValue = player2Card.topSpeed;
         document.getElementById("P2Len").firstChild.nodeValue = player2Card.length;
         document.getElementById("P2Width").firstChild.nodeValue = player2Card.carWidth;
-        document.getElementById("P2Price").firstChild.nodeValue = player2Card.price +" yrs";
+        document.getElementById("P2Price").firstChild.nodeValue = player2Card.price;
     }
     
     function clearP2Card() {
