@@ -22,7 +22,7 @@ var politicians = [
     new TopTrumpCard("David Cameron", "Conservative", 56, 6, 2, 50, 70, 60, 70, 80, "images\/car_thumbs\/dcam.jpeg"),
     new TopTrumpCard("Gordon Brown", "Labour", 72, 3, 0, 86, 90, 90, 80, 70, "images\/car_thumbs\/brown.jpeg"),
     new TopTrumpCard("Tony Blair", "Labour", 69, 10, 3, 50, 90, 95, 30, 85, "images\/car_thumbs\/blair.jpeg"),
-    new TopTrumpCard("John Major", "Conservative", 79, 7, 1, 80, 88, 80, 80, 30, "images\/car_thumbs\/major.jpeg"),
+    new TopTrumpCard("John Major", "Conservative", 79, 7, 1, 75, 76, 80, 80, 30, "images\/car_thumbs\/major.jpeg"),
     new TopTrumpCard("Margaret Thatcher", "Conservative", 87, 11, 3, 60, 79, 70, 60, 89, "images\/car_thumbs\/maggie.jpeg"),
     new TopTrumpCard("James Callaghan", "Labour", 92, 3, 0, 68, 65, 65, 90, 65, "images\/car_thumbs\/jamesc.jpeg"),
     new TopTrumpCard("Harold Wilson", "Labour", 79, 8, 4, 88, 78, 75, 90, 80, "images\/car_thumbs\/wilson.jpeg"),
@@ -104,9 +104,9 @@ var politicians = [
         document.getElementById("P2Car").src = player2Card.image;
         document.getElementById("P2Car").alt = player2Card.name;
         document.getElementById("P2Name").firstChild.nodeValue = player2Card.name;
-        document.getElementById("P2Engine").firstChild.nodeValue = player2Card.inOffce;
-        document.getElementById("P2BHP").firstChild.nodeValue = player2Card.electionVictories;
-        document.getElementById("P2RPM").firstChild.nodeValue = player2Card.principles;
+        document.getElementById("P2yio").firstChild.nodeValue = player2Card.inOffce;
+        document.getElementById("P2wins").firstChild.nodeValue = player2Card.electionVictories;
+        document.getElementById("P2prin").firstChild.nodeValue = player2Card.principles;
         document.getElementById("P2Accel").firstChild.nodeValue = player2Card.leadership;
         document.getElementById("P2Speed").firstChild.nodeValue = player2Card.Economics;
         document.getElementById("P2Len").firstChild.nodeValue = player2Card.ForeignPolicy;
@@ -118,15 +118,15 @@ var politicians = [
     
     function clearP2Card() {
         document.getElementById("P2Flag").src = "images\/blank.gif";
-        document.getElementById("P2Flag").alt = "Opponent Person Country";
+        document.getElementById("P2Flag").alt = "Opponent Person Party";
         
         document.getElementById("P2Car").src = "images\/bigBlank.gif";
-        document.getElementById("P2Car").alt = "Opponent Person Picture";
+        document.getElementById("P2Car").alt = "Opponent Person Party";
         document.getElementById("P2Name").firstChild.nodeValue = "????";
-        if(document.getElementById("P2Engine").firstChild){
-            document.getElementById("P2Engine").firstChild.nodeValue = "????";
-            document.getElementById("P2BHP").firstChild.nodeValue = "????";
-            document.getElementById("P2RPM").firstChild.nodeValue = "????";
+        if(document.getElementById("P2yio").firstChild){
+            document.getElementById("P2yio").firstChild.nodeValue = "????";
+            document.getElementById("P2wins").firstChild.nodeValue = "????";
+            document.getElementById("P2prin").firstChild.nodeValue = "????";
             document.getElementById("P2Accel").firstChild.nodeValue = "????";
             document.getElementById("P2Speed").firstChild.nodeValue = "????";
             document.getElementById("P2Len").firstChild.nodeValue = "????";
