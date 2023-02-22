@@ -2,7 +2,7 @@ body {
     margin: 0px;
     padding: 0px;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    font-family: arial;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
    }
    
@@ -17,9 +17,11 @@ body {
     text-align: center;
    }
    
-   .hide {display: none }
-   .centered { text-align: center; margin: 0 auto;}
-   #counter { border: 0px; }
+   .hide {
+    display: none
+     }
+
+ 
    
 
    .cell-color {
