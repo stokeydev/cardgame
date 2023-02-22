@@ -28,3 +28,6 @@ body {
     height: auto;
    }
 
+#yourCard, #P1Flag, #oppCard, #P2Flag {
+    border-radius: 25px;
+}

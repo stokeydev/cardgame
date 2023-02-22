@@ -112,6 +112,8 @@ var politicians = [
         document.getElementById("P2Len").firstChild.nodeValue = player2Card.ForeignPolicy;
         document.getElementById("P2Width").firstChild.nodeValue = player2Card.charisma;
         document.getElementById("P2Price").firstChild.nodeValue = player2Card.age;
+
+        
     }
     
     function clearP2Card() {
