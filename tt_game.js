@@ -1,3 +1,4 @@
+//class definition for Trump cards
 class TopTrumpCard {
     constructor(name, party, age, inOffce, electionVictories, principles, leadership, Economics, ForeignPolicy, charisma, image) {
         this.name = name;
@@ -14,6 +15,7 @@ class TopTrumpCard {
     }
 }
 
+//data that is used to populate the class instance
 // (name, party, age(at death if deceased), in offce, election victories, principles, leadership, Economics, Foreign Policy, , charisma)
 var politicians = [
     new TopTrumpCard("Rishi Sunak", "Conservative", 42, 0.4, 0, 35, 65, 30, 75, 60, "images\/car_thumbs\/rish.jpeg"),
@@ -48,7 +50,7 @@ var politicians = [
     new TopTrumpCard("Michael Howard", "Conservative", 81, 0, 0, 70, 70, 65, 65, 65,"images\/car_thumbs\/howard.jpeg")
     ];
     
-    
+    //globals needed for the game
     var content = "";
     var result = "";
     var endGame = false;
@@ -56,6 +58,7 @@ var politicians = [
     var noValue=-1;
     var you, player2, theDeck, player1Card, player2Card, ending, oppStack, yourStack, mainStack, g, i, j, cardNum;
     
+    //this is the draw function - whether your card beats the opponent's card
     function draw() {
         if(endGame) {
             ending=" cards";
@@ -82,22 +85,24 @@ var politicians = [
         mainStack="Middle Stack: "+ theDeck.getSize();
     }
     
+    //this function draws a card from the deck for player 1
     function drawP1Card() {
         document.getElementById("P1Flag").src = "images\/"+ player1Card.party +".gif";
         document.getElementById("P1Flag").alt = player1Card.party;
         document.getElementById("P1Car").src = player1Card.image;
         document.getElementById("P1Car").alt = player1Card.name;
         document.getElementById("P1Name").firstChild.nodeValue = player1Card.name;
-        document.getElementById("P1Engine").lastChild.nodeValue = player1Card.inOffce;
-        document.getElementById("P1BHP").lastChild.nodeValue = player1Card.electionVictories;
-        document.getElementById("P1RPM").lastChild.nodeValue = player1Card.principles;
-        document.getElementById("P1Accel").lastChild.nodeValue = player1Card.leadership;
-        document.getElementById("P1Speed").lastChild.nodeValue = player1Card.Economics;
+        document.getElementById("P1Office").lastChild.nodeValue = player1Card.inOffce;
+        document.getElementById("P1Ewins").lastChild.nodeValue = player1Card.electionVictories;
+        document.getElementById("P1Prin").lastChild.nodeValue = player1Card.principles;
+        document.getElementById("P1Lead").lastChild.nodeValue = player1Card.leadership;
+        document.getElementById("P1Econ").lastChild.nodeValue = player1Card.Economics;
         document.getElementById("P1Len").lastChild.nodeValue = player1Card.ForeignPolicy;
         document.getElementById("P1Width").lastChild.nodeValue = player1Card.charisma;
         document.getElementById("P1Price").lastChild.nodeValue = player1Card.age;
     }
     
+    //Constructing other card (computer's card)
     function drawP2Card() {
         document.getElementById("P2Flag").src = "images\/"+ player2Card.party +".gif";
         document.getElementById("P2Flag").alt = player2Card.party;
@@ -115,7 +120,8 @@ var politicians = [
 
         
     }
-    
+
+    //this shows the initial state of the computer's card as blank
     function clearP2Card() {
         document.getElementById("P2Flag").src = "images\/blank.gif";
         document.getElementById("P2Flag").alt = "Opponent Person Party";
@@ -135,17 +141,20 @@ var politicians = [
         }
     }
     
+    //changes the text displayed in the button and the function that is called when the button is clicked
     function changeButtonFunction(funcName, buttonText) {
         document.getElementById("compareButton").value=buttonText;
         document.getElementById("player1").onsubmit = funcName;
     }
     
+    //changes the value of the current card count for each player
     function changeCardValues() {
         document.getElementById("yourCards").firstChild.nodeValue = yourStack;
         document.getElementById("oppCards").firstChild.nodeValue = oppStack;
         document.getElementById("mainCards").firstChild.nodeValue = mainStack;
     }
     
+    //this function is called until there is a winner, when one of players doesn't have any cards left
     function next() {
         document.getElementById("player1").p1[noValue].checked = false;
         noValue = -1;
@@ -163,6 +172,7 @@ var politicians = [
         return false;
     }
     
+    //initialisation of the main card deck and each player's deck, shuffling the initial state of deck
     function setup() {
         content = "";
         result = "";
@@ -184,16 +194,6 @@ var politicians = [
             d.carImages[i].src=politicians[i].image;
         }
         
-        d.carImages[31] = new Image();
-        d.carImages[31].src= "images\/labour.gif";
-        d.carImages[32] = new Image();
-        d.carImages[32].src = "images\/labour.gif";
-        d.carImages[33] = new Image();
-        d.carImages[33].src = "images\/labour.gif";
-        d.carImages[34] = new Image();
-        d.carImages[34].src = "images\/labour.gif"; 
-        d.carImages[35] = new Image();
-        d.carImages[35].src = "images\/labour.gif"; 
         
         theDeck.shuffle();
         var numCards = theDeck.getSize();
@@ -208,7 +208,8 @@ var politicians = [
         clearP2Card();
         changeCardValues();
     }
-    
+
+    //loads the first card, ready for the player to select the attribute, updates the button text to show the text 'compare cards' in preperation for the actual comparison to be launched
     function initialise() {
         setup();
         document.getElementById("matchResult").firstChild.nodeValue="";
@@ -218,7 +219,7 @@ var politicians = [
         
         return false;
     }
-    
+    //this is doing the comparison between the two cards
     function compare() {
         var player1form = document.getElementById("player1");
         for(g=0;g<player1form.p1.length;g++) {

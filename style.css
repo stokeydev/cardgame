@@ -1,64 +1,51 @@
-#container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    align-content: center;
-  }
-
-
-  h1 {
-    float: left;
-  }
-
-  
-  .player-card, .computer-card {
+  .player-card,
+  .computer-card {
     width: 48%;
     display: inline-block;
     vertical-align: top;
     margin-right: 2%;
   }
-  
+
   .card-image {
     width: 100%;
   }
-  
+
   .card-stats {
     display: flex;
     justify-content: space-between;
   }
-  
+
   .stat {
     width: 25%;
     text-align: center;
   }
-  
+
   .stat-name {
     font-weight: bold;
   }
-  
+
   .stat-value {
     font-size: 2em;
   }
-  
+
   .result {
     text-align: center;
     margin-top: 20px;
     font-size: 2em;
   }
-  
+
   .category-buttons {
     text-align: center;
     margin-top: 20px;
   }
-  
+
   button {
     font-size: 1.5em;
     padding: 10px;
     margin-right: 10px;
   }
-  
+
   button:hover {
     cursor: pointer;
     background-color: #ddd;
   }
-  

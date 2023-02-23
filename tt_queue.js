@@ -1,3 +1,4 @@
+//this is creating the methods for the trump card class (creators, setters and getters)
 function TopTrumpQueue() {
 	var total = 0;
 	var myArray = [];
