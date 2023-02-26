@@ -97,9 +97,9 @@ var politicians = [
         document.getElementById("P1Prin").lastChild.nodeValue = player1Card.principles;
         document.getElementById("P1Lead").lastChild.nodeValue = player1Card.leadership;
         document.getElementById("P1Econ").lastChild.nodeValue = player1Card.Economics;
-        document.getElementById("P1Len").lastChild.nodeValue = player1Card.ForeignPolicy;
-        document.getElementById("P1Width").lastChild.nodeValue = player1Card.charisma;
-        document.getElementById("P1Price").lastChild.nodeValue = player1Card.age;
+        document.getElementById("P1Forpol").lastChild.nodeValue = player1Card.ForeignPolicy;
+        document.getElementById("P1Charisma").lastChild.nodeValue = player1Card.charisma;
+        document.getElementById("P1Age").lastChild.nodeValue = player1Card.age;
     }
     
     //Constructing other card (computer's card)
@@ -112,11 +112,11 @@ var politicians = [
         document.getElementById("P2yio").firstChild.nodeValue = player2Card.inOffce;
         document.getElementById("P2wins").firstChild.nodeValue = player2Card.electionVictories;
         document.getElementById("P2prin").firstChild.nodeValue = player2Card.principles;
-        document.getElementById("P2Accel").firstChild.nodeValue = player2Card.leadership;
-        document.getElementById("P2Speed").firstChild.nodeValue = player2Card.Economics;
-        document.getElementById("P2Len").firstChild.nodeValue = player2Card.ForeignPolicy;
-        document.getElementById("P2Width").firstChild.nodeValue = player2Card.charisma;
-        document.getElementById("P2Price").firstChild.nodeValue = player2Card.age;
+        document.getElementById("P2lead").firstChild.nodeValue = player2Card.leadership;
+        document.getElementById("P2econ").firstChild.nodeValue = player2Card.Economics;
+        document.getElementById("P2forpol").firstChild.nodeValue = player2Card.ForeignPolicy;
+        document.getElementById("P2charisma").firstChild.nodeValue = player2Card.charisma;
+        document.getElementById("P2age").firstChild.nodeValue = player2Card.age;
 
         
     }
@@ -133,11 +133,11 @@ var politicians = [
             document.getElementById("P2yio").firstChild.nodeValue = "????";
             document.getElementById("P2wins").firstChild.nodeValue = "????";
             document.getElementById("P2prin").firstChild.nodeValue = "????";
-            document.getElementById("P2Accel").firstChild.nodeValue = "????";
-            document.getElementById("P2Speed").firstChild.nodeValue = "????";
-            document.getElementById("P2Len").firstChild.nodeValue = "????";
-            document.getElementById("P2Width").firstChild.nodeValue = "????";
-            document.getElementById("P2Price").firstChild.nodeValue = "????";
+            document.getElementById("P2lead").firstChild.nodeValue = "????";
+            document.getElementById("P2econ").firstChild.nodeValue = "????";
+            document.getElementById("P2forpol").firstChild.nodeValue = "????";
+            document.getElementById("P2charisma").firstChild.nodeValue = "????";
+            document.getElementById("P2age").firstChild.nodeValue = "????";
         }
     }
     
