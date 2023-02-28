@@ -231,7 +231,7 @@ var politicians = [
                 if(p1Val < p2Val) {
                     result = "You lose a card";
                     if(you.getSize() === 0) {
-                        result +=" and you are out :P";
+                        result +=" and have been beaten, old sport. Click below to play again.";
                         endGame = true;
                     }
                     if(theDeck.getSize()!==0) {
@@ -251,7 +251,7 @@ var politicians = [
                 else {
                     result = "You win a card";
                     if(player2.getSize()===0) {
-                        result +=" and you win the game!!!!!!!!!!";
+                        result +=" You win! A true master of modern British politics :)";
                         endGame = true;
                     }
                     if(theDeck.getSize()!==0) {
