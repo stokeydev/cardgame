@@ -56,27 +56,18 @@ Top Trumps: British Politics (1945-2023 edition) is a fun game for those who enj
 
 ### **Primary Goal**  
   
-Top Trumps: British Politics (1945-2023 edition) aims to inform the general public about the splendors of Stoke Newington. It lets people know what they can get up to, from walking tours, informing them what bars, pubs, restaurants, and cafes are available, what the local sports amenities are, along with the history of the neighbourhood.
+Top Trumps: British Politics (1945-2023 edition) aims to be a fun game for those who either love politics or want a fun way to learn key figures of modern British politics.
 
 ### **Visitor Goals** 
 
-Visitors will be from all different backgrounds, and thus it is a goal of the website to be straight to the point and easy to use for those seeking information about: what to do in Stoke Newington and the history of the area. The site is designed to be responsive to allow visitors to view it from a range of devices. The basic information is easily accessible from every page via the footer, which makes for easy navigation and no need to use a "back" button. In addition, an interactive Google Map is also on the what to do page in order to direct those not familiar with the neighborhood, and a youtube video is available on the homepage who desire a more visiual experience of the area online, in case the photos are not interactive enough for them.  
+Visitors will be from all different backgrounds, and thus it is a goal of the website to be straight to the point and easy to use for those who wish to play the game. The site is designed to be responsive to allow visitors to view it from a range of devices. The basic information is easily accessible.  
 
 ### **First Time Visitor**
-  - A user can access each page of the site with one click via the navigation bar.
-  - A user can view images of Stoke Newington, located at the center of the landing page.
-  - A user can view the basic information of the site via the footer.
-  - A user can find a video tour of the area.
+  - A user can read the instructions of the game as it is located at the top of the page, and is one of the first things a user will see.
+  - Directly below the instructions is the actual game so users can get stuck in as soon as they wish.
 
-### **Returning Visitor**  
-  - A user can quickly access the other pages via the landing page to revisit information or find new information.
-  - A user can learn about the history of the area.
-  - A user can find social media links in the footer.
-  - A user can use the contact form to connect with the community.
-  
-### **Frequent Visitor**  
-  - A user can see what they can do in the neighbourhood.
-  - A user can view the social media links to check for updates (if any).    
+### **Returning & Frequent Visitor**  
+  - A user can check the attributes of each card after doing some research and guess why the attribute was given.
 
 --- 
 
@@ -85,11 +76,11 @@ Visitors will be from all different backgrounds, and thus it is a goal of the we
 ### **1. Strategy**  
 
 
-- I required an easy-to-read, dependable website that delivers clear information about what to do, and a brief history of the area.  
-- I wanted to show off the highlights of the area as soon as people enter the site so it stands out and makes the site look attractive, hence the carousel.  
-- A clean design and use of graphics and colour to evoke an emotional and familiar connection for the user has been adapted - no big bright colours, a simple and clean look that is accessible to everyone while being a modern, respectable-looking site.  
+- I wanted a fun political-themed game. Top Trumps was selected as you can compare a number of politicians and their attributes; Top Trumps not only allows, but requires a lot of "characters" to be added into the game or else the game won't function. 
+- As 30 cards - and therefore 30 people or "characters" were required, I added all the political leaders from 1945 till 2023, which is the year when the game was made. This includes all the party leaders of the Conservative Party and Labour Party as they have been the two political parties in power in Britain since 1945. I've also added the three reiging Monarchs during this period. I left out any 'acting' leader (those who lead a political party while a new, permanenet leader was found - an example is Margaret Beckett, who was acting leader of the Labour Party when the previous leader, John Smirth, died suddenly of a heart attack in 1994 - Beckett was replaced by Tony Blair after a leadership contest that same year. Though she was leader, she was only 'defacto' leader, hence left out).
+- The attributes are based on the politician's record to date, rather than at the height of their career. One of the attributes has been rounded up in most cases - those who were in power and the attribute 'Years in Office'.   
 - Information about this site is to be transparent and simple.  
-- Mobile responsiveness is an essential feature required for this website.
+
   
 
 ### **2. Scope**  

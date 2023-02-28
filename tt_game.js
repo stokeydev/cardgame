@@ -1,5 +1,6 @@
 //class definition for Trump cards
 class TopTrumpCard {
+    // Assigning each parameter value to an object property with the same name
     constructor(name, party, age, inOffce, electionVictories, principles, leadership, Economics, ForeignPolicy, charisma, image) {
         this.name = name;
         this.party = party;
@@ -50,7 +51,8 @@ var politicians = [
     new TopTrumpCard("Michael Howard", "Conservative", 81, 0, 0, 70, 70, 65, 65, 65,"images\/car_thumbs\/howard.jpeg")
     ];
     
-    //globals needed for the game
+    
+    // Initializing global variables needed for the game
     var content = "";
     var result = "";
     var endGame = false;
