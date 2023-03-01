@@ -176,7 +176,7 @@ The hero image is the character randomly generated for the user to start the gam
  
 ### **Desktop, Tablet & Mobile Differences**  
   
-Below is what the game looks like on a on. different devices. Users will have to scroll down ever so slightly to click the compare button on tablet and mobile view.
+Below is what the game looks like on a on. different devices. Users will have to scroll down ever so slightly to click the compare button on tablet view.
   
 ### **Tablet View (iPad Mini/iPad Pro/Surface Pro)**  
   
@@ -195,8 +195,8 @@ Below is what the game looks like on a on. different devices. Users will have to
 
 ## Future Features  
 
-- For future development, I would like to include an extra page dedicated to ongoing events.
-- A section on how to get to Stoke Newington such as a list of underground/overground stations and what buses get there.
+- For future development, I would like to add the option to play with more than one person.
+- Expand the amount of cards to add other major political figures (such as leaders from other British political parties).
   
 ---   
   
@@ -226,7 +226,7 @@ Below is what the game looks like on a on. different devices. Users will have to
 GitHub was used to deploy the website. These were the steps taken to acheive this:  
 
 1. Login to GitHub account
-2. Navigate to the project repository, stokeydev_pa1
+2. Navigate to the project repository, stokeydev_cardgame
 3. Click the Settings button near the top of the page
 4. In the left-hand menu, find and click on the Pages button
 5. In the Source section, choose 'main' from the drop-down, select branch menu
@@ -260,19 +260,16 @@ The results of feature testing are as follows:
   
 | Page | Test | Pass/Fail |
 | :----| :----| :--------:|
-| All  | Logo links back to homepage | Pass |
-| All  | Correct page name highlighted in navigation | Pass |
-| All  | Navigation links bring the user to relevant page | Pass |
-| All  | Footer social media list in the footer brings the user to relevant sites via a new tab | Pass |
-| All  | Useful links list in footer links to correct page | Pass |
-| All  | Images and sections are responsive in different media sizes | Pass |
-| Index| Hero image loads and carousel works | Pass |
-| Index| Youtube video works | Pass | 
-| What to do | All buttons scroll to desired place | Pass |
-| What to do | Google Maps works and shows correct information | Pass |
-| History| Timeline is lined up correctly | Pass |
-| Support us | Contact form required elements are responsive | Pass |
-| Support us | Form submit button applies validation | Pass |
+| Index  | Shuffle deck | Pass |
+| Index  | Image of person corresponding to character | Pass |
+| Index  | Politcal Party / Royal Standard image corresponds to character | Pass |
+| Index  | Attributes corresponding to character | Pass |
+| Index  | Higher attribute winning when clicking 'compare card' | Pass |
+| Index  | Middle stack working when both attributes are the same | Pass |
+| Index  | Middle stack passing onto deck of winner when attribute chosen is higher | Pass |
+| Index  | The 'You have x cards' section correctly calculating amount accordign to events in the game | Pass |
+| Index  | Seeing if the game ends when someone wins all of the cards along with corresponding 'you win' or 'you lose' message | Pass |
+
 
 Further device testing took place in Dev Tools on:
   - iPhone 4/5/6/7/8
@@ -333,12 +330,12 @@ For Mobile
   
 | Bug | Section | Fix |
 | :----| :----| :--------:|
-| Capition in carousel on smaller screens | Index/Home page | On smaller screens, the caption didn't look good. In order to resolve this, via bootstrap I hid the caption when the size screen reduced - this was part of making it responsive. |
-| Youtube video size | Index/Home page | When I embedded a Youtube video onto the homepage, it would spill over the size of the screen and it wasn't responsive. I found a solution online via CSS rather than solely relying on Bootstrap, and the problem was resolved. |
-| Navbar responsiveness | All pages | As I created a bespoke navbar, when I tried to make it responsive, it wasn't working, or in other words, it wasn't doing the desired aim. In order to resolve this, I created two separate navbars: one that that would only appear on larger screens, and the other on smaller screens. |
-| Google Maps responsiveness  | What to do page |  The Google Maps 'walking tour' I embbeded in the the What to do page, much like the youtube video, wasn't responsive, so rather than trying to use Bootstrap I used CSS and created two separate versions, one for big screens, one for small screens to make it responsive. |
-| Button on card | What to do page | Because I created two versions of the Google Maps feature (for responsiveness, as explained above), I therefore had to create to separate buttons for both versions of the Google Maps section of the website. This was done via Bootstrap. |
-| Order of image and text | What to do page | I made the What to do page responsive, however, on the mobile screen version, some images would place themselves under the text rather than above. To fix this I changed the ordering via CSS so that all images would appear above the text, so as to keep a consistent theme and look. |
+| Shuffling and drawing the deck of cards | Index/Home page | tt_que.js was created to maintain the cards by allowing the shuffling and drawing the deck of cards. |
+| Variables | Index/Home page | tt_que.js was created to maintain the cards by initialising the instance variables and setting the instance variables as properties of the object. |
+| Counting the cards | Index/Home page | In tt_que.js, a way to get the total number of cards in the deck was added. |
+| Shuffling the deck | Index/Home page | In tt_que.js, a way to shuffle the deck was added. |
+
+
 
 ### **Unsolved Bugs** 
 
@@ -351,7 +348,7 @@ For Mobile
 ## Credits  
   
 ### **Content References**
-- All content written for the website is by myself, is for educational purposes only.
+
 - [Code Institute](https://codeinstitute.net/ie/) for their HTML/CSS and Javascript learning material.
 - [W3Schools](https://www.w3schools.com/) for additional learning material.
 - [MD Boostrap](https://mdbootstrap.com/docs/standard/navigation/footer/) for the footer, history timeline, and the hamburger navigation bar.
