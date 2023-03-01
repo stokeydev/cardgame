@@ -85,81 +85,41 @@ Visitors will be from all different backgrounds, and thus it is a goal of the we
 
 ### **2. Scope**  
 
-The site must be available on a wide range of devices due to the varied range of bacgkrounds visiting the site. A range of visitors will be there for different reasons, but will want the same information - if someone lives in the area, they might not know everything their neighbourhood has to offer, and a first time visitor will want the main highlights - thus, both visitors, though in different situations, are essentially looking for the same information, which is what to do in Stoke Newington. The site provides a comfortable, no-fuss approach which doesn't have endless amounts of information. The navigation is there to help people skip what they might deem irrelevant information.
+The site will be available on a wide range of devices due to the varied range of people visiting the site. A range of visitors will be there for different reasons, but will want the same information - how to play the game. The site provides a comfortable, no-fuss approach which doesn't have endless amounts of information. The instructions are there and then the game is just below.
 
 - The site is to contain only essential information, presented in a similar fashion and layout.   
-- Text must be clear and legible on any sized device to allow the user instant access to the relevant pages, and different parts of the pages.  
-- Three images that show off Stoke Newington is included on the home page.  
-- For future development, the information on what to do can be updated, such as the fairs and festivals page, or any new developments in the area can be incorporated into the site. The website can possibly be translated into other languages, depending on who visits.
+- Text is clear and legible on any sized device. 
+- For future development, the attributes on the cards can be updated, as some of the politicans age and perhaps have success or failure in their political careers.
   
 
 ### **3. Structural**  
 
-Similar to the idea for the design and layout to be accessible and functional, simple navigation and interactivity is essential. The site needs to provide information swiftly no matter the background of the user.  
-- Easy to identify, clickable links with a consistent layout. The design is to be predictable for each page with the information clearly identifiable.  
-- Any buttons or links had to provide feedback to the user to identify their purpose in the form of a design change that followed the flow of the overall aesthetic.  
-- A large, clear button to bring the user directly to the other pages would be placed front and center of their eye-line.  
-- In addition, a navigation bar and footer would be visible on every page, at every device size, displaying the same information. This would provide the returning visitors with a faster route to their information destination, strengthening the site's familiar and trusting feeling.  
+The structure was simple:
+- The instructions at the top of the and the game belwo the instructions.
 
   
 ### **4. Skeleton**  
 
 The site was developed to be simple, clear, and familiar.  
 
-- For the landing page, the logo, a castle (chosen because there's a castle in Stoke Newington), was to be top-left of every page, no matter the orientation or screen size.  
-- The simple, four-item navigation bar of 'Home', 'What to do', 'History', and 'Support us', is situated always to the right of the logo. The page the user is on will be highlighted on the nav bar.  
-- A large, clear image dominates the landing page with a nice view of Clissold House and St. Mary's Church (new).  
-- Centered in the image is a tagline welcoming visitors. First-time visitors have access to the what to do, history and support us pages with one easy click.  
-- For returning or curious visitors, scrolling down the page introduces them to a brief, three-piece of information sections of the website. Images are visible on one side of the headed paragraphs.  
-- Just before the footer, there is a nice youtube video which shows off Stoke Newington - this helps people visualise the neighbourhood, and some people might find the youtube video sufficient.
-- The page ends with the footer, again offering three pieces of important information to the user, links to other pages, location, and social media.  
+- For the landing page, you have the page title at the top, just below that the instructions, and then the actual game, with two cards next to each other.  
 
-- For the what to do page, the navigation bar and footer remain as before. There is an interactive content section at the top laid out as cards, with an image and title -people can jump to seciton they want to find out about by clicking a button rather than having to scroll all the way down. Users have the option to also jump back to the top via a button rather than having to scroll all the way back up as well. All sections are split into two: information and a relevant image. 
-
-- For the history page, the navigation bar and footer remain as before. There is a timeline with a title and icon represnting the time, along with informaiton about said period. The timeline is progressive, starting from a certain point of history and progressing towards the modern period.
-  
-- For the support us page, the navigation and footer remain as before. There is a form where people can write in how they can help the website, and an image accompanying the form.
 
 ### Wireframes  
 <details open>
-<summary>Wireframe - Homepage Desktop & Mobile</summary>  
+<summary>Wireframe - Homepage Desktop</summary>  
 
-![homepage wireframe-mobile & desktop](./assets/images/Wirefram%20home.png)
+![homepage wireframe-mobile & desktop](./images/readme/wireframe.png)
 </details> 
-<details >
-<summary>Wireframe - What to do page Desktop</summary>  
 
-![homepage wireframe-mobile & desktop](./assets/images/whattodo%20desktop.png)
-</details> 
-<details>
-<summary>Wireframe - What to do page Mobile</summary>  
-
-![homepage wireframe-mobile & desktop](./assets/images/WhattodoMobile.png)
-</details>    
-<details>
-<summary>Wireframe - History page Desktop & Mobile</summary>  
-
-![homepage wireframe-mobile & desktop](./assets/images/history%20wireframe.png)
-</details> 
-          
-<details>
-<summary>Wireframe - Support us page Desktop</summary>  
-
-![homepage wireframe-mobile & desktop](./assets/images/supportus%20desktop.png)
-</details> 
-<details>
-<summary>Wireframe - Support us page Mobile</summary>  
-
-![homepage wireframe-mobile & desktop](./assets/images/supportus%20mobile.png)
-</details>         
 
 
 ### **5. Surface**  
 
- A design was created that allowed a consistent flow throughout the four-page site.   
- - A white background was kept to contrast with the images and content.  
-- A palette of back and white was chosen to give it a clean, easily accessible and modern look.  
-- The fonts were kept to the default so as to keep the clean and accessibe look consistent throughout the site.  
+ A design was created that allowed players to read the instruction and play the game.   
+ - A red and blue gradient linear background was added to contrast with the cards - red and blue was chosen because red is the colour of the Labour Party, blue being the colour of the Conservative Party.  
+- The cards are white to contract with the background. Every other line in the attributes section is a light yellow to make them more distinguished.  
+- The font is Gill Sans. This was chosen for asthetic reasons, it suites the site.  
 
 Overall, the design intends to make the website seem welcoming, non-threatening and easily accessible.  
  

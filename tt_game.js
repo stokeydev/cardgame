@@ -253,7 +253,7 @@ var politicians = [
                 else {
                     result = "You win a card";
                     if(player2.getSize()===0) {
-                        result +=" You win! A true master of modern British politics :)";
+                        result +=" and you've won the game! A true master of modern British politics :)";
                         endGame = true;
                     }
                     if(theDeck.getSize()!==0) {
