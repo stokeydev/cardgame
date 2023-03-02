@@ -118,7 +118,26 @@ The site was developed to be simple, clear, and familiar.
 - The font is Gill Sans. This was chosen for asthetic reasons, it suites the site.  
 
 Overall, the design intends to make the website seem welcoming, non-threatening and easily accessible.  
- 
+
+### **6. Algorithm** 
+ The algorithm is designed to allow each player (the person playing and the computer) to start the game with 15 cards - the aim of the game is for either the player or the computer to win all 30 cards. This is achieved by the player 1 (a person) selecting an attribute they believe will be higher than the selected attribute the card player 2 (the computer) has. In each scenario, the person can see their card but won't be able to see the computer's card until they select an attribute and clicks the 'Compare Cards' button - this triggers th eevent where the computer's card is revealed, and the deck is adjusted in three ways depending on the selected attribute:
+ -If player 1's selected attribute is higher, the deck is adjusted to add a card to their deck.
+ -If player 2's selected attribute is higher, the deck is adjusted to add a card to their deck.
+ -If player 1's selected attribute is the same as player 2's attribute on their card, the middle stack will add both player 1 and player 2's cards.
+
+ In the last instance, the winner of the next round gains the cards from the middle stack and the total is adjusted - if there is a draw again then the loop repeats until there is player who wins the cards from the middle stack. 
+
+ The game is goes on this continious loop until a player has 30 cards in their deck. In this instance, the person playing will be informed if they won or lost, and the button 'Play again' will appear, allowing them to restart the game.
+
+ In order to make this a reality, the game consists of two js files: tt_queue.js and tt_game.js.
+
+The tt_queue.js file contains a class named TopTrumpQueue which has several methods that are responsible for maintaining the deck of cards, shuffling, and drawing cards. The constructor function initializes some variables, including an array to hold the cards, the total number of cards in the deck, and a placeholder variable for a dequeued card. The enqueue method is used to add a new card to the deck, the getSize method is used to get the total number of cards in the deck, and the dequeue method is used to remove a card from the deck and return it. The shuffle method swaps two cards in the array at random a large number of times to shuffle the deck.
+
+The tt_game.js file contains a class named TopTrumpCard which is used to create an instance of a card with various properties. It also initializes some global variables used in the game, including content, result, endGame, noGo, noValue, you, player2, theDeck, player1Card, player2Card, ending, oppStack, yourStack, mainStack, g, i, j, and cardNum. It also includes two functions, draw and drawP1Card. The draw function checks the status of the game and displays information about the player's and computer's stacks. The drawP1Card function is responsible for drawing a card from the deck for player 1 and updating the card information displayed in the HTML file.
+
+Overall, the code is a simple implementation of a Top Trumps card game using JavaScript. It creates a deck of cards, shuffles them, and allows the player to draw a card and compete against the computer's card. The game continues until one player has all the cards or until the player decides to end the game.
+
+
 ---   
   
   
