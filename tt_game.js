@@ -1,3 +1,4 @@
+// source: Peter Bonnett & http://www.jacobites.org.uk/iwb/top_trumps/index.html
 //class definition for Trump cards
 class TopTrumpCard {
     // Assigning each parameter value to an object property with the same name

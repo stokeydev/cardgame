@@ -1,5 +1,5 @@
 // This file contains the code for the Top Trump game
-
+//source: Peter Bonnett & http://www.jacobites.org.uk/iwb/top_trumps/index.html
 // The TopTrumpQueue class is responsible for maintaining the deck of cards
 // and shuffling and drawing cards as required.
 function TopTrumpQueue() {
